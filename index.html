@@ -131,7 +131,10 @@
   .guide{width:100%;text-align:left;display:flex;flex-direction:column;gap:14px;font-size:14px;margin:0}
   .guide div{display:grid;grid-template-columns:52px 1fr;gap:12px}
   .guide dt{color:var(--gold);font-family:var(--serif)}
-  .guide dd{margin:0;color:var(--ink-soft)}
+  .guide dd{margin:0;color:var(--ink-soft);word-break:keep-all}
+  .guide .pk-head{display:block;font-weight:400;color:var(--ink)}
+  .guide .pk-list{margin:6px 0 0;padding-left:1.1em;display:flex;flex-direction:column;gap:4px;line-height:1.6}
+  .guide .pk-list li::marker{color:var(--gold)}
 
   /* ---------- Accounts ---------- */
   .note{font-size:12px;color:var(--muted)}
@@ -239,7 +242,12 @@
     </div>
     <dl class="guide">
       <div><dt>지하철</dt><dd>공덕역 10번 출구 바로 앞 (5·6호선, 공항철도, 경의중앙선)</dd></div>
-      <div><dt>주차</dt><dd>건물 주차장 2시간 무료예요. 공덕역 10번 출구 쪽으로 오시면 주차요원이 안내해 드려요. 만차일 때는 근처 외부 주차장으로 안내해 드려요. 주차권은 축의대와 연회장 앞에 비치되어 있어요.</dd></div>
+      <div><dt>주차</dt><dd><strong class="pk-head">건물 주차장 2시간 무료</strong>
+        <ul class="pk-list">
+          <li>공덕역 10번 출구 쪽으로 오시면 주차요원이 안내해 드려요</li>
+          <li>만차일 때는 근처 외부 주차장으로 안내해 드려요</li>
+          <li>주차권은 축의대와 연회장 앞에 있어요</li>
+        </ul></dd></div>
     </dl>
   </section>
 
